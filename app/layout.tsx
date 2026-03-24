@@ -1,12 +1,40 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Google_Sans } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local"
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
+import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
+export const googleSans = localFont({
+  src: [
+    // ← CHANGE THESE PATHS + FILENAMES to match your exact files
+    {
+      path: "../public/GoogleSans-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    // {
+    //   path: "../fonts/google-sans/static/GoogleSans-Medium.woff2",
+    //   weight: "500",
+    //   style: "normal",
+    // },
+    // {
+    //   path: "../fonts/google-sans/static/GoogleSans-Bold.woff2",
+    //   weight: "700",
+    //   style: "normal",
+    // },
+  ],
+  variable: "--font-google-sans",
+  display: "swap",        // prevents invisible text
+  preload: true,
+});
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -25,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${googleSans.variable} antialiased`}
       >
         {children}
       </body>
