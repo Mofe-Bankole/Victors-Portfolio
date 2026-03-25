@@ -1,39 +1,54 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faPhotoFilm } from "@fortawesome/free-solid-svg-icons";
+import { faSpotify } from "@fortawesome/free-brands-svg-icons";
+import { faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header() {
   return (
-    <header
-      className="header text-black w-full mx-auto flex flex-row justify-between py-2 mt-4"
-     
-    >
-      <div className="flex flex-row items-center">
-        <div className="logo rounded-full bg-black text-white w-11 h-11 text-center items-center justify-center overflow-none ml-7 mr-7">
-          <div>
-            <FontAwesomeIcon icon={faPhotoFilm}/>
+    <header className="fixed top-0 z-50 w-full backdrop-blur-md bg-white/10 border-b border-white/20 shadow-sm">
+      <div className="w-[90%] mx-auto flex items-center justify-between py-3">
+        
+        {/* LEFT SIDE */}
+        <div className="flex items-center space-x-6">
+          
+          {/* Logo */}
+          <div className="w-11 h-11 flex items-center justify-center rounded-full bg-black text-white font-bold text-lg shadow-md rotate-180">
+            V
+          </div>
+
+          {/* Nav */}
+          <nav>
+            <ul className="flex items-center space-x-8 text-xl font-medium">
+              {["About Me", "Resume", "Work"].map((item) => (
+                <li
+                  key={item}
+                  className="relative cursor-pointer text-gray-800 hover:text-black transition"
+                >
+                  {item}
+
+                  {/* underline animation */}
+                  <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+
+        {/* RIGHT SIDE */}
+        <div className="flex items-center space-x-3">
+          
+          {/* Icon Button */}
+          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/30 hover:scale-110 transition cursor-pointer">
+            <FontAwesomeIcon icon={faUser} className="text-black w-5 h-5" />
+          </div>
+
+          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-black/80 hover:bg-black transition hover:scale-110 cursor-pointer">
+            <FontAwesomeIcon icon={faSpotify} className="text-white w-5 h-5" />
+          </div>
+
+          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-black/80 hover:bg-black transition hover:scale-110 cursor-pointer">
+            <FontAwesomeIcon icon={faPhone} className="text-white w-5 h-5" />
           </div>
         </div>
-        <nav>
-          <ul className="flex flex-row space-x-4 items-center">
-            <li className="text-normal cursor-pointer  hover:border hover:border-b-2.5 transition duration-700">
-              About Me
-            </li>
-            <li className="text-normal hover:border-b-2.5 transition duration-700">
-              Resume
-            </li>
-            <li className="text-normal hover:border-b-2.5 transition duration-700">
-              Work
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div className="flex space-x-2.5">
-        <div className="w-11 h-11 rounded-full bg-white text-black cursor-pointer">
-          <FontAwesomeIcon icon={faGithub}/>
-        </div>
-        <div className="w-11 h-11 rounded-full bg-white text-black"></div>
-        <div className="w-11 h-11 rounded-full bg-white text-black"></div>
       </div>
     </header>
   );

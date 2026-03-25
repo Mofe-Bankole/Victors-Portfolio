@@ -6,23 +6,24 @@ import {
   faEnvelope,
   faX,
 } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown19 } from "@fortawesome/free-solid-svg-icons/faArrowDown19";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function IntroBlock() {
   return (
-    <div className="flex flex-col text-black">
+    <div className="flex flex-col text-black md:mt-0 mt-20">
       <div className="flex flex-row text-4xl justify-between font-bold tracking-wide text-left mb-14">
         <h1>Introduction</h1>
-        <div className="w-10 h-10 px-4 py-4 flex items-center justify-center rounded-lg cursor-pointer border-[#e5e7eb] border-[0.5px] shadow-sm">
-          <FontAwesomeIcon icon={faArrowDownWideShort} className="text-black text-sm" />
+        <div className="w-10 h-10 px-4 py-4 flex items-center justify-center rounded-full cursor-pointer border-[#e5e7eb] border-[0.5px] shadow-sm">
+          <FontAwesomeIcon icon={faArrowDown} className="text-black text-sm" />
         </div>
       </div>
-      <div className="border rounded-xl px-7 py-5 bg-white shadow-sm">
-        <h1 className="text-2xl font-extrabold tracking-tight w-full mb-2 text-gray-900">
-          Graphic Designer based in Ibadan
+      <div className="border-1 border-[#b8b4b484] rounded-3xl px-7 py-5 bg-white shadow-sm">
+        <h1 className="text-2xl font-extrabold tracking-wide  w-full mb-2 text-gray-900">
+          A Graphic Designer based in Ibadan
         </h1>
         <p className="text-gray-700 text-base leading-relaxed max-w-lg">
-          Passionate Graphic Designer and Brand Visual Consultant with over 2
+          Passionate Graphic Designer and Brand Visual Consultant with over 4
           years of experience helping businesses strengthen brand presence,
           improve audience engagement, and communicate clearly through strategic
           visual design. Experienced in advising on visual direction and
@@ -37,7 +38,7 @@ export default function IntroBlock() {
         <div className="mb-3">
           <h1 className="text-2xl font-bold">Get In Touch</h1>
         </div>
-        <div className="flex flex-row mb-3 mt-4">
+        <div className="flex md:flex-row flex-col mb-3 mt-4">
           <div className="flex gap-6">
             {/* EMAIL BOX - Black, shorter */}
             <div className="w-[260px] bg-[#000000] rounded-3xl px-2 py-3 flex flex-col min-h-[140px] relative">
@@ -50,7 +51,7 @@ export default function IntroBlock() {
 
               {/* LinkedIn URL */}
               <p className="text-white text-[13px] font-medium tracking-wider absolute bottom-5 right-4 text-right">
-                linkedin.com/in/qorryadj
+                victorololou23@gmail.com
               </p>
             </div>
 
@@ -73,7 +74,7 @@ export default function IntroBlock() {
             </a>
 
             {/* BEHANCE BOX - White, shorter */}
-            <a className="w-[260px] bg-[#ffffff] rounded-3xl px-2 py-3 flex flex-col min-h-[140px] relative border border-black border-2" href="https://www.behance.net/tofunmiololuo">
+            <a className="w-[260px] bg-[#ffffff] rounded-3xl px-2 py-3 flex flex-col min-h-[140px] relative border-black border-5" href="https://www.behance.net/tofunmiololuo">
               {/* Big "in" text */}
               <div className="text-6xl font-black text-black mb-3 tracking-tighter text-left">
                 <h1>

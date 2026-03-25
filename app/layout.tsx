@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Google_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Google_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local"
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -16,15 +16,15 @@ export const googleSans = localFont({
   src: [
     // ← CHANGE THESE PATHS + FILENAMES to match your exact files
     {
-      path: "../public/GoogleSans-Regular.ttf",
+      path: "../public/fonts/GoogleSans-Bold.ttf",
       weight: "400",
       style: "normal",
     },
-    // {
-    //   path: "../fonts/google-sans/static/GoogleSans-Medium.woff2",
-    //   weight: "500",
-    //   style: "normal",
-    // },
+    {
+      path: "../public/fonts/GoogleSans-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
     // {
     //   path: "../fonts/google-sans/static/GoogleSans-Bold.woff2",
     //   weight: "700",
@@ -35,6 +35,11 @@ export const googleSans = localFont({
   display: "swap",        // prevents invisible text
   preload: true,
 });
+
+const outfit = Outfit({
+  weight : '400',
+  variable : "--font-outfit"
+})
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -53,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${googleSans.variable} antialiased`}
+        className={`${outfit.variable} antialiased`}
       >
         {children}
       </body>

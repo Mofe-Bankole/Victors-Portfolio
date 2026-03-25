@@ -9,15 +9,16 @@ export default function ImageIntroCard() {
         relative 
         w-full max-w-[650px] 
         rounded-3xl overflow-hidden 
-        bg-gray-900 
+        bg-gray-900 aspect-9/16 md:aspect-square
         shadow-2xl
         flex items-center justify-center
+        cursor-pointer
       "
     >
       {/* Blurred background portrait */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 cursor-pointer">
         <Image
-          src="/potrait.jpg"
+          src="/dio.jpg"
           alt="Portrait"
           fill
           className="grayscale-[0.7] blur-[0px] scale-110 brightness-90 object-cover"
@@ -35,7 +36,7 @@ export default function ImageIntroCard() {
             <p className="text-lg sm:text-xl font-light tracking-wide opacity-90 text-left mt-5 w-full">
               Hello,
             </p>
-            <h1 className="text-2xl sm:text-5xl md:text-4xl font-bold leading-tight tracking-tight w-full text-left">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight w-full text-left">
               My name is
               <br />
               <span className="block mt-1">Victor</span>
