@@ -18,7 +18,7 @@ export default function ImageIntroCard() {
       {/* Blurred background portrait */}
       <div className="absolute inset-0 cursor-pointer">
         <Image
-          src="/dio.jpg"
+          src="/victor.jpg"
           alt="Portrait"
           fill
           className="grayscale-[0.7] blur-[0px] scale-110 brightness-90 object-cover"

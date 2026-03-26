@@ -2,6 +2,7 @@ import {
   faArchLinux,
   faFigma,
   faSolana,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faBehance } from "@fortawesome/free-brands-svg-icons/faBehance";
 import { faDribbble } from "@fortawesome/free-brands-svg-icons/faDribbble";
@@ -18,11 +19,11 @@ export default function GlazingPage() {
         <div className="flex flex-col text-2xl font-medium text-black space-y-2 justify-between h-full">
           <div className="flex flex-col">
             <div className="flex items-center gap-6 border-b-3 py-3 border-gray-300 ">
-              <span className="text-orange-500">#Branding</span>
-              <span className="text-[#690808ab]">#Logo</span>
+              <span className="text-[#EA2E00]">#Branding</span>
+              <span className="text-[#FBD2C0]">#Logo</span>
             </div>
             <div className="flex items-center gap-6 border-b-3 py-3 border-gray-300 ">
-              <span className="text-[#040000]">#Social_Media</span>
+              <span className="text-[#10367D]">#Social_Media</span>
               <span className="text-[#ea07d7f1]">#Poster</span>
             </div>
             <div className="flex items-center gap-6 border-b-3 py-3 border-gray-300 ">
@@ -65,19 +66,25 @@ export default function GlazingPage() {
         {/* Subtle inner shadow/gradient for 3D volume and premium feel */}
         <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/25 pointer-events-none rounded-3xl"></div>
         <a
-          className="w-20 text-3xl absolute top-20 right-32 h-20 flex items-center justify-center rounded-full bg-black cursor-pointer text-white transition duration-500"
+          className="w-20 text-4xl absolute top-20 right-32 h-20 flex items-center justify-center rounded-full bg-black cursor-pointer text-white transition duration-500"
           href="https://x.com/Tofunmi_Ololuo"
         >
           <FontAwesomeIcon icon={faFigma} className="w-6 h-6" />
         </a>
         <a
-          className="w-20 text-3xl absolute top-20 left-20 rotate-45 h-20 flex items-center justify-center rounded-full bg-black cursor-pointer text-white transition duration-500"
+          className="w-20 text-4xl absolute top-20 left-20 rotate-45 h-20 flex items-center justify-center rounded-full bg-black cursor-pointer text-white transition duration-500"
           href="https://x.com/Tofunmi_Ololuo"
         >
           <FontAwesomeIcon icon={faBehance} className="w-6 h-6" />
         </a>
         <a
-          className="w-20 text-3xl absolute top-[625px] left-[190px] h-20 flex items-center justify-center rounded-full bg-black cursor-pointer text-white transition duration-500"
+          className="w-20 text-4xl absolute top-60 left-96 h-20 flex items-center justify-center rounded-full bg-black cursor-pointer text-white transition duration-500"
+          href="https://x.com/Tofunmi_Ololuo"
+        >
+          <FontAwesomeIcon icon={faYoutube} className="w-6 h-6" />
+        </a>
+        <a
+          className="w-20 text-4xl absolute top-[625px] left-[190px] h-20 flex items-center justify-center rounded-full bg-black cursor-pointer text-white transition duration-500"
           href="https://x.com/Tofunmi_Ololuo"
         >
           <FontAwesomeIcon icon={faSolana} className="w-6 h-6" />
@@ -88,11 +95,6 @@ export default function GlazingPage() {
           <br />
           PORTFOLIO
         </div>
-
-        {/* 2024 badge – positioned exactly like the image */}
-        {/* <div className="absolute bottom-10 left-10 bg-white text-black px-8 py-3 rounded-2xl text-3xl font-black flex items-center shadow-[inset_0_4px_8px_rgba(0,0,0,0.15)] z-20">
-          {Date.now().toString}
-        </div> */}
       </div>
     </div>
   );

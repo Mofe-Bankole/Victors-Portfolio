@@ -17,17 +17,18 @@ export default function Header() {
 
           {/* Nav */}
           <nav>
-            <ul className="flex items-center space-x-8 text-xl font-medium">
+            <ul className="flex items-center space-x-8 text-xl font-medium  ">
               {["About Me", "Resume", "Work"].map((item) => (
-                <li
+                <a
                   key={item}
                   className="relative cursor-pointer text-gray-800 hover:text-black transition"
+                  href={`#${item.toLowerCase()}`}
                 >
                   {item}
 
                   {/* underline animation */}
                   <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-                </li>
+                </a>
               ))}
             </ul>
           </nav>
