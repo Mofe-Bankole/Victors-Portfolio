@@ -141,7 +141,7 @@ export default function InfoSection() {
             </div>
           </div>
         </div>
-        <div className="border-r-[0.50] py-8 px-4 flex flex-col md:w-1/3">
+        <div className="border-r-[0.50] p-8 flex flex-col md:w-1/3">
           <div className="flex flex-row justify-between mb-12">
             <h1 className="text-2xl">Education</h1>
             <p className="w-12 h-12 flex items-center justify-center rounded-full bg-white border-[5px] cursor-pointer text-black transition duration-500">
@@ -149,16 +149,40 @@ export default function InfoSection() {
             </p>
           </div>
           <div className="flex flex-col">
-          <div className="rounded-2xl mb-8 flex flex-col border-gray-900 border-[5px] px-5 py-4 cursor-pointer">
+          <div className="rounded-2xl mb-8 flex flex-col border-gray-900 border-[5px] px-6 py-6 cursor-pointer bg-black text-white">
               <div className="flex flex-row items-center justify-between">
-                <div className="rounded-3xl w-[38%] bg-blue-600 text-white px-4 py-1.5">
+                <div className="rounded-3xl w-[38%] text-white py-1.5">
                   <p> 2016-2021</p>
                 </div>
                 <FontAwesomeIcon icon={faCheck} />
               </div>
               <div className="flex flex-col space-y-1.5 mt-4">
                 <h1 className="text-gray-400 text-xl">Graduate</h1>
-                <h1 className="text-3xl">University of Lagos</h1>
+                <h1 className="text-2xl">University of Lagos</h1>
+              </div>
+            </div>
+            <div className="rounded-2xl mb-8 flex flex-col border-gray-900 border-[5px] px-6 py-6 cursor-pointer bg-black text-white">
+              <div className="flex flex-row items-center justify-between">
+                <div className="rounded-3xl w-[38%] text-white py-1.5">
+                  <p> 2016-2021</p>
+                </div>
+                <FontAwesomeIcon icon={faCheck} />
+              </div>
+              <div className="flex flex-col space-y-1.5 mt-4">
+                <h1 className="text-gray-400 text-xl">Graduate</h1>
+                <h1 className="text-2xl">University of Lagos</h1>
+              </div>
+            </div>
+            <div className="rounded-2xl mb-8 flex flex-col border-gray-900 border-[5px] px-6 py-6 cursor-pointer bg-black text-white">
+              <div className="flex flex-row items-center justify-between">
+                <div className="rounded-3xl w-[38%] text-white py-1.5">
+                  <p> 2016-2021</p>
+                </div>
+                <FontAwesomeIcon icon={faCheck} />
+              </div>
+              <div className="flex flex-col space-y-1.5 mt-4">
+                <h1 className="text-gray-400 text-xl">Graduate</h1>
+                <h1 className="text-2xl">University of Lagos</h1>
               </div>
             </div>
           </div>

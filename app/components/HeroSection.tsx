@@ -2,6 +2,7 @@ import GlazingPage from "./GlazingPage";
 import ImageIntroCard from "./ImageIntroCard";
 import InfoSection from "./InfoSection";
 import IntroBlock from "./IntroBlock";
+import Projects from "./Projects";
 
 export default function HeroSection() {
   return (
@@ -18,6 +19,7 @@ export default function HeroSection() {
         <div className="w-full bg-black rounded-3xl"></div>
       </div>
       <InfoSection />
+      <Projects/>
     </div>
   );
 }
