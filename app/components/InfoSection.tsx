@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export default function InfoSection() {
   const tools = [
-    { src: "/logos/adobe_ru.png", alt: "Illustrator" },
-    { src: "/logos/adobe_photoshop.jpg", alt: "Photoshop" },
-    { src: "/logos/adobe_stock.png", alt: "After Effects" },
-    { src: "/logos/adobe_illustrator.png", alt: "InDesign" },
-    { src: "/logos/creative-cloud.png", alt: "Procreate" },
-    { src: "/logos/behance.jpg", alt: "Adobe XD" },
-    { src: "/logos/figma.jpg", alt: "Figma" },
+    { src: "/logos/App=Adobe Ar.png", alt: "Illustrator" },
+    { src: "/logos/App=Behance.png", alt: "Photoshop" },
+    { src: "/logos/App=Figma.png", alt: "After Effects" },
+    { src: "/logos/App=Adobe Ps.png", alt: "InDesign" },
+    { src: "/logos/App=Adobe Ca.png", alt: "Procreate" },
+    // { src: "/logos/behance.jpg", alt: "Adobe XD" },
+    // { src: "/logos/figma.jpg", alt: "Figma" },
   ];
 
   const tags = [
@@ -107,16 +107,17 @@ export default function InfoSection() {
               </div>
 
               {/* Bottom Logos */}
-              <div className="flex justify-center items-center gap-3 mt-4">
+              <div className="flex justify-center items-center gap-1 mt-4">
                 {tools.map((tool, i) => (
                   <div
                     key={i}
-                    className="w-12 h-12 flex items-center justify-center cursor-pointer border border-white/10 shadow-md hover:scale-110 transition duration-500"
+                    className="flex cursor-pointer p-0 shadow-md hover:scale-110 transition duration-500"
                   >
                     <img
                       src={tool.src}
                       alt={tool.alt}
-                      className="w-12 h-12 object-cover hover:grayscale transition duration-500 cursor-pointer"
+                      className="text-sm object-cover hover:grayscale transition duration-500 cursor-pointer"
+                      // style={{ padding: 0 }}
                     />
                   </div>
                 ))}
