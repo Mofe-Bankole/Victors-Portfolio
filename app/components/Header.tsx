@@ -4,24 +4,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 z-50 w-full backdrop-blur-md bg-white/10 border-b border-white/20 shadow-sm">
+    <header className="fixed top-0 z-60 w-full bg-black text-white shadow-sm">
       <div className="w-[90%] mx-auto flex items-center justify-between py-3">
         
         {/* LEFT SIDE */}
-        <div className="flex items-center space-x-6">
-          
-          {/* Logo */}
           <div className="w-11 h-11 flex items-center justify-center rounded-full bg-black text-white font-bold text-lg shadow-md rotate-180">
             V
           </div>
+        <div className="flex items-center space-x-6">
+          
+          {/* Logo */}
 
           {/* Nav */}
           <nav>
             <ul className="flex items-center space-x-8 text-xl font-medium  ">
-              {["About Me", "Resume", "Work"].map((item) => (
+              {["Logo", "Brand Identity", "Social Media Flyer" , "UI/UX"].map((item) => (
                 <a
                   key={item}
-                  className="relative cursor-pointer text-gray-800 hover:text-black transition"
+                  className="relative cursor-pointer text-white transition group hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-orange-500 hover:to-purple-500 transition duration-200"
+             
                   href={`#${item.toLowerCase()}`}
                 >
                   {item}

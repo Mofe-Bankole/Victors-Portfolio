@@ -24,7 +24,7 @@ export default function InfoSection() {
 
   return (
     <div className="mt-50 w-full text-black border-y-4 border-y-black bg-gradient-to-b from-[#efeff3] via-[#ffffff] to-[#ecedf4] shadow-lg">
-      <div className="flex xl:flex-row flex-col w-[1550px] mx-auto">
+      <div className="flex xl:flex-row flex-col w-[1580px] mx-auto">
         {/* Experience */}
         <div className="border-r-2 border-r-gray-300 py-8 px-8 flex flex-col md:w-1/3">
           <div className="flex flex-row justify-between mb-12 items-center">
@@ -115,7 +115,7 @@ export default function InfoSection() {
                     <img
                       src={tool.src}
                       alt={tool.alt}
-                      className="text-sm object-cover hover:grayscale transition duration-500 cursor-pointer"
+                      className="object-cover hover:grayscale transition duration-500 cursor-pointer"
                     />
                   </div>
                 ))}
@@ -144,7 +144,7 @@ export default function InfoSection() {
         {/* Education */}
         <div className="p-8 flex flex-col md:w-1/3">
           <div className="flex flex-row justify-between mb-12 border-b border-gray-200 pb-4">
-            <h1 className="text-2xl">Education</h1>
+            <h1 className="text-4xl">Education</h1>
             <p className="w-12 h-12 flex items-center justify-center rounded-full bg-white border-2 border-gray-300 cursor-pointer text-black transition duration-500 shadow-sm">
               <FontAwesomeIcon icon={faArrowDown} className="w-6 h-6" />
             </p>
@@ -156,7 +156,7 @@ export default function InfoSection() {
                 className="rounded-2xl mb-8 flex flex-col border-[3px] border-gradient border-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 px-6 py-6 cursor-pointer bg-black text-white shadow-lg"
               >
                 <div className="flex flex-row items-center justify-between">
-                  <div className="rounded-3xl w-[38%] text-white py-1.5 bg-gradient-to-r from-blue-700 to-blue-400 shadow">
+                  <div className="rounded-3xl w-[39%] text-white px-3 py-2 bg-gradient-to-r bg-blue-600 shadow">
                     <p>2016-2021</p>
                   </div>
                   <FontAwesomeIcon icon={faCheck} className="text-green-400 text-xl" />

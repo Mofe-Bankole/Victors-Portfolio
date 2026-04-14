@@ -23,7 +23,7 @@ export default function IntroBlock() {
           A Graphic Designer based in Ibadan
         </h1>
         <p className="text-gray-700 text-base leading-relaxed max-w-lg">
-          Passionate Graphic Designer and Brand Visual Consultant with over 4
+          Passionate Graphic Designer and Brand Visual Consultant with over 3
           years of experience helping businesses strengthen brand presence,
           improve audience engagement, and communicate clearly through strategic
           visual design. Experienced in advising on visual direction and
@@ -43,7 +43,7 @@ export default function IntroBlock() {
             {/* EMAIL BOX - Black, shorter */}
             <div className="w-[260px] bg-[#000000] rounded-3xl px-2 py-3 flex flex-col min-h-[140px] relative">
               {/* Big "in" text */}
-              <div className="text-6xl font-black text-white mb-3 tracking-tighter text-left">
+              <div className="text-4xl font-black text-white mb-3 tracking-tighter text-left">
                 <h1>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </h1>
@@ -51,7 +51,7 @@ export default function IntroBlock() {
 
               {/* LinkedIn URL */}
               <p className="text-white text-[13px] font-medium tracking-wider absolute bottom-5 right-4 text-right">
-                victorololou23@gmail.com
+                ololuovictor123@gmail.com
               </p>
             </div>
 
@@ -61,7 +61,7 @@ export default function IntroBlock() {
               href="https://x.com/Tofunmi_Ololuo"
             >
               {/* Big "in" text */}
-              <div className="text-6xl font-black text-white mb-3 tracking-tighter text-left">
+              <div className="text-4xl font-black text-white mb-3 tracking-tighter text-left">
                 <h1>
                   <FontAwesomeIcon icon={faTwitter} />
                 </h1>
@@ -76,7 +76,7 @@ export default function IntroBlock() {
             {/* BEHANCE BOX - White, shorter */}
             <a className="w-[260px] bg-[#ffffff] rounded-3xl px-2 py-3 flex flex-col min-h-[140px] relative border-black border-5" href="https://www.behance.net/tofunmiololuo">
               {/* Big "in" text */}
-              <div className="text-6xl font-black text-black mb-3 tracking-tighter text-left">
+              <div className="text-4xl font-black text-black mb-3 tracking-tighter text-left">
                 <h1>
                   <FontAwesomeIcon icon={faBehance} />
                 </h1>
